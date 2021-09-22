@@ -1,0 +1,24 @@
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width,initial-scale=1")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+title Lista de Productos 
+link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css", 
+rel="stylesheet", 
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU", crossorigin="anonymous")
+.container
+    legend Lista de Producto
+    table.table
+        thead
+            tr
+                th(scope="col") ID
+                th(scope="col") nombre
+                th(scope="col") Precio
+                th(scope="col") Foto
+        tbody
+            each val in listaproductos 
+                tr
+                    th(scope="row") !{val.id}
+                    td !{val.title}
+                    td !{val.price}
+                    td !{val.thumbnail}
+                 

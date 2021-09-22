@@ -1,0 +1,35 @@
+<div class="container" style="background-color:slategray">
+    <legend>Ingrese Producto</legend>
+    <form method="post" action="productos/guardar">
+      <div class="mb-3">
+        <label for="titleProduct" class="form-label">Nombre</label>
+        <input
+          name="title"
+          type="text"
+          class="form-control"
+          id="titleProduct"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="pricesProduct" class="form-label">Precio</label>
+        <input
+          type="number"
+          name="price"
+          class="form-control"
+          id="pricesProduct"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="thumbnailProduct" class="form-label">Foto</label>
+        <input
+          type="text"
+          class="form-control"
+          name="thumbnail"
+          id="thumbnailProduct"
+        />
+      </div>
+      <button type="submit" value="Grabar Persona" class="btn btn-primary">
+        Guardar
+      </button>
+    </form>
+  </div>

@@ -1,0 +1,22 @@
+meta(charset="UTF-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+meta(http-equiv="X-UA-Compatible", content="ie=edge")
+title Mi página
+link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css", 
+rel="stylesheet", 
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU", crossorigin="anonymous")
+.container(style="background-color: slategray;margin-top:90px")
+  legend Ingrese Producto
+  form(method="post", action="api/productos/guardar")
+    .mb-3
+      label.form-label(for="titleProduct") Nombre
+      input.form-control#titleProduct(name="title", type="text")
+    .mb-3
+      label.form-label(for="pricesProduct") Precio
+      input.form-control#pricesProduct(type="number", name="price")
+    .mb-3
+      label.form-label(for="thumbnailProduct") Foto
+      input.form-control#thumbnailProduct(type="text", name="thumbnail")
+    button.btn.btn-primary(type="submit", value="Grabar Persona").
+     Guardar
+      
